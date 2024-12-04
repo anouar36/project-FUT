@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/stylesheet/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="loger"><img src="/assets/images/kora-removebg-preview (1).png" alt=""></div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <section>
+      
+      <div class="container-pr">
+        <div class="container-tairan" >
+          <div class="butoonAddplayers">
+            <button class="deletcart" onclick="delet()">Delet Oll</button>
+            <button id="desplform" class="btn2" type="button" onclick="dsplayeForm()">
+              Add Plyaers
+            </button>
+          </div>
+
+          <form class="DN" id="formul">
+            <button class="" type="button" onclick="butNonForm()">X</button>
+            <div class="DEV1">
+              <div class="input">
+                <label for="name">Name44:</label>
+                <input
+                  class="input1"
+                  type="text"
+                  aria-live="polite"
+                  id="nameR"
+                  name="user_name"
+                />
+              </div>
+
+              <div class="input">
+                <label for="age">AGE DE PALYER:</label>
+                <input
+                  class="input1"
+                  type="number"
+                  id="age"
+                  RANCK="user_number"
+                />
+              </div>
+
+              <div class="input">
+                <label for="ranck">RANCK:</label>
+                <input
+                  class="input1"
+                  type="number"
+                  id="ranck"
+                  RANCK="user_number"
+                />
+              </div>
+              <div class="input">
+                <label for="position">PAOSITION:</label>
+                <select id="position" class="input1" name="cars" id="cars">
+                  <option value="CF">CF</option>
+                  <option value="LWF">LWF</option>
+                  <option value="RWF">RWF</option>
+                  <option value="CM2">CM2</option>
+                  <option value="CM1">CM1</option>
+                  <option value="DM">DMF</option>
+                  <option value="CB1">CB1</option>
+                  <option value="CB2">CB2</option>
+                  <option value="RB">RB</option>
+                  <option value="LB">LB</option>
+                  <option value="GK">GK</option>
+                </select>
+              </div>
+
+              <div id="inputImges" class="input">
+                
+                <input
+                  type="url"
+                  id="iimage"
+                  class="iimage"
+                  name="fileInput"
+                  accept="image/*"
+                  
+                />
+
+                
+                <input
+                  type="url"
+                  id="iimage2"
+                  class="iimage"
+                  name="fileInput2"
+                  accept="image/*"
+                />
+
+                
+                <input
+                  type="url"
+                  id="iimage3"
+                  class="iimage"
+                  name="fileInput3"
+                  accept="image/*"
+                />
+              </div>
+            </div>
+
+            <div class="DEV2">
+              <div class="input2">
+                <label for="pac">PAC:</label>
+                <input class="in2" type="number" id="pac" name="user_name" />
+              </div>
+
+              <div class="input2">
+                <label for="sho">SHO:</label>
+                <input class="in2" type="number" id="sho" RANCK="user_number" />
+              </div>
+
+              <div class="input2">
+                <label for="pas">PAS:</label>
+                <input class="in2" type="number" id="pas" RANCK="user_number" />
+              </div>
+              <div class="input2">
+                <label for="dri">DRI:</label>
+                <input class="in2" type="number" id="dri" RANCK="user_number" />
+              </div>
+
+              <div class="input2">
+                <label for="def">DEF:</label>
+                <input class="in2" type="number" id="def" RANCK="user_number" />
+              </div>
+              <div class="input2">
+                <label for="phy">PHY:</label>
+                <input class="in2" type="number" id="phy" RANCK="user_number" />
+              </div>
+            </div>
+            
+            <button
+              class="submi"
+              type="button"
+              onclick="addInLocal(), verfiction() "
+            >
+              SEND
+            </button>
+          </form>
+
+          <div class="contair-pransipal">
+            <div class="imge-bg">
+              <img src="/assets/images/field-bg.svg" alt="" />
+
+              <div class="container-cart">
+                <div class="attack">
+                  <div id="LWF" class="dfr">
+                    <div class="cart" onclick="slector1(this)"></div>
+                  </div>
+
+                  <div id="CF" class="dfr">
+                    <div class="cart" onclick="slector1(this)"></div>
+                  </div>
+
+                  <div id="RWF" class="dfr">
+                    <div class="cart" onclick="slector1(this)"></div>
+                  </div>
+                </div>
+
+                <div class="cm">
+                  <div id="CM1" class="dfr">
+                    <div class="cart" onclick="slector1(this)"></div>
+                  </div>
+
+                  <div id="DM" class="dfr">
+                    <div class="cart" onclick="slector1(this)"></div>
+                  </div>
+
+                  <div id="CM2" class="dfr">
+                    <div class="cart" onclick="slector1(this)"></div>
+                  </div>
+                </div>
+                <div class="df">
+                  <div id="LB" class="dfr">
+                    <div class="cart" onclick="slector1(this)"></div>
+                  </div>
+                  <div id="CB1" class="dfr">
+                    <div class="cart" onclick="slector1(this)"></div>
+                  </div>
+
+                  <div id="CB2" class="dfr">
+                    <div class="cart" onclick="slector1(this)"></div>
+                  </div>
+
+                  <div id="RB" class="dfr">
+                    <div class="cart" onclick="slector1(this)"></div>
+                  </div>
+                </div>
+                  <div class="GK" >
+                <div id="GK" class="dfr">
+                  <div class="cart" onclick="slector1(this)" >
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div id="containerChangement" class="container-changement"></div>
+            <div id="container-ollPlyers" class="container-ollPlyers"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/fetch.js"></script>
+  </body>
+</html>
